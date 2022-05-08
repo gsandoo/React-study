@@ -8,8 +8,10 @@ import UserList from './UserList';
 // import Counter from './Counter';
 import CreateUser from './CreateUser';
 // import useInputs from './useInputs';
+import produce from 'immer';
 
 
+window.produce = produce;
 //useMemo 훅
 function countActiveUsers(users){
   console.log(" 활성 사용자 수를 세는 중...")

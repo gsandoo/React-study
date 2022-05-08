@@ -52,6 +52,7 @@
 5. Route
 
 - 라우트를 정의할 때 사용하는 컴포넌트
+- import {Route} from 'react-router-dom'
 
 6. Link
 
