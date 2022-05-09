@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
+import Profile from './Profile';
 
 function App(){
   return (
@@ -17,7 +18,8 @@ function App(){
       <hr />
       <Route path='/' exact component={Home} />
       <Route path='/about' component={About} />
-    </div>
+      <Route path='/profiles/:username'component={Profile}/> 
+     </div>
   );
 };
 

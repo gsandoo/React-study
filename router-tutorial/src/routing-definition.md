@@ -61,4 +61,12 @@
 - Router 의 주소를 바꾸지만 새로고침 안됌.
 
 
+# URL 파라미터와 쿼리
+
+- 주소를 통해 동적인값을 읽어올 때 사용.
+
+- URL : /profiles/gsandoo <strong>특정 데이터를 가져올 떄</strong>
+
+- Query :  /filter?type=book&sort_by=date <strong>옵션주어 가져올 때</strong>
+
 

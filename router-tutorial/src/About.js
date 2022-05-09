@@ -1,6 +1,9 @@
 import React from "react";
+import qs from 'qs';
 
-function About(){
+function About({location}){
+    console.log(location);
+    const query = qs.parse
     return(
         <div>
             <h1>소개</h1>
