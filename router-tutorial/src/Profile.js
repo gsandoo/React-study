@@ -12,9 +12,9 @@ const profileData = {
     }
 }
 function Profile({match}){
-    const {username} = match.params;
-    console.log(match.params)
-    console.log(username);
+    const {username} = match.params; // 여기서 username 은 App.js Route 컴포넌트에서 props 로 받아온 값.
+    console.log(match) 
+    console.log(username); //gsandoo , homer
     const profile  = profileData[username]
 
     if (!profile){
@@ -22,8 +22,8 @@ function Profile({match}){
     }
     return(
         <div>
-            {username} ({profile.name})
-            <h3>{profile.description}</h3>
+            <h3>{username} ({profile.name})</h3>
+            <p>{profile.description}</p>
         </div>
         
     );
