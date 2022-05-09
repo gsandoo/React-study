@@ -1,4 +1,5 @@
 import React from "react";
+import WithRouterSample from "./withRouterSample";
 
 
 const profileData = {
@@ -11,6 +12,8 @@ const profileData = {
         description: "심슨 가족에 나오는 아빠 역할 캐릭터"
     }
 }
+
+//URL 파라미터 사용법 match 사용
 function Profile({match}){
     const {username} = match.params; // 여기서 username 은 App.js Route 컴포넌트에서 props 로 받아온 값.
     console.log(match) 
@@ -24,6 +27,7 @@ function Profile({match}){
         <div>
             <h3>{username} ({profile.name})</h3>
             <p>{profile.description}</p>
+            <WithRouterSample/>
         </div>
         
     );

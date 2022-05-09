@@ -1,9 +1,11 @@
 import React from "react";
 import qs from 'qs';
 
+
+//query 사용법. location 사용.
 function About({location}){
     const query = qs.parse(location.search , { //파싱 => 값을 추출함
-        ignoreQueryPrefix: true
+        ignoreQueryPrefix: true // ? 생략 하기 위해 사용
     });
     console.log(query)
     const detail = query.detail === 'true' //문자열로 인식하기 때문에  ' ' 해줘야한다.

@@ -70,3 +70,29 @@
 - Query :  /filter?type=book&sort_by=date <strong>옵션주어 가져올 때</strong>
 
 
+# 서브 라우트
+
+- 라우트 되고있는 함수형 컴포넌트 안에 다른 라우트 컴포넌트를 넣는 것.
+
+
+
+# 리액트 라우터 부가기능 ===============================
+
+# History 객체 
+
+- push : 특정 주소로 이동. 방문기록 남음.
+
+- goBack: 뒤로가기
+
+- replace: 특정 주소로 이동.  방문기록 남지않음
+
+- block : 페이지 이탈 방지
+
+- location : 현재 페이지 정보  
+
+
+# withRouter 
+
+- 보통 라우트 되지 않는 컴포넌트에서 조건부로 이동할 떄 사용.
+
+- 라우터가 아닌 곳에서 match , location , history 사용.
