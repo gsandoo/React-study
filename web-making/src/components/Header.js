@@ -1,31 +1,36 @@
 import React from "react";
-// import styled from "styled-components";
-
-
-// const HeaderBlock = styled.div`
-//     background : gray;
-//     display:flex;
-//     justify-content: center;
-//     align-items: center;
-//     display: fixed;
-//     `;
-
-// const HeaderImage = styled.img`
-// width: 20px;
-// height: 20px;
-// padding: 15px 0 10px 0;
-// margin-right: 20px;
-// &:hover {
-//     cursor: pointer;
-// }
-// `
+import {Link} from 'react-router-dom'
 
 function Header(){
     return(
-        <div id="header" className="flex">
-            <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_desktop.png" alt="header_image_1"/>
-            <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_mobile.png" alt="header_image_2"/>
+        <div id="top_fixed">
+            <div id="header" className="flex">
+                <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_desktop.png" alt="header_image_1"/>
+                <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_mobile.png" alt="header_image_2"/>
+            </div>
+            <div id="navigation">
+                <div className="tab_left">
+                    <div>
+                        <Link to='/'>HOME</Link>
+                    </div>
+                </div>
+                <div className="tab_right flex">
+                    <div>
+                        <Link to='/About'>ABOUT</Link>
+                    </div>
+                    <div>
+                        <Link to='/Items'>ITEMS</Link>
+                    </div>
+                    <div>
+                        <Link to='/Account'>ACCOUNT</Link>
+                    </div>
+                    <div>
+                        <Link to='/Contact'>CONTACT</Link>
+                    </div>
+                </div>
+            </div>   
         </div>
+        
 );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState  , useEffect} from "react";
 
 
+
 function Menu(){
     const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
     const [ScrollActive, setScrollActive] = useState(false);
@@ -28,19 +29,12 @@ function Menu(){
         return(  
         <div id="page" className="flex" >
             <div className="main_left">
-                <div className="home">HOME</div>
-                    <img src="http://ecudemo222144.cafe24.com/web/3.jpg" alt="main_img"/>
-                    <div id="further">
-                        <p className={ScrollActive ? "small_further_text" : "further_text"} >FURTHER</p>
-                    </div>
+                <img src="http://ecudemo222144.cafe24.com/web/3.jpg" alt="main_img"/>
+                <div id="further">
+                    <p className={ScrollActive ? "small_further_text" : "further_text"} >FURTHER</p>
+                </div>
             </div>
             <div className="main_right">
-                <div className="tab">
-                    <div>ABOUT</div>
-                    <div>PRODUCT</div>
-                    <div>CONTACT</div>
-                    <div>ACCOUNT</div>
-                </div>
                 <img src="http://ecudemo222144.cafe24.com/web/3.jpg" alt="main_img"/>
             </div>
         </div>

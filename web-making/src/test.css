@@ -9,12 +9,15 @@
     justify-content: center;
     align-items: center;
 }
-
+#top_fixed{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
 #header {
     background-color: gray;
     width: 100%;
-    position: fixed;
-    z-index: 1;
 }
 #header img {
     width: 40px;
@@ -24,6 +27,48 @@
 }
 #header img:hover{
     cursor: pointer;
+}
+/* 헤더 밑 메뉴 바 */
+#navigation {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.tab_left{
+    display: flex;
+    width: 50%;
+}
+.tab_left div{
+    padding: 2em 0 0 10em;
+}
+.tab_left div a{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right:40px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s;
+}
+.tab_left div a:hover{
+    color: lightgreen ;
+}
+.tab_right{
+    display: flex;
+    width: 50%;
+}
+.tab_right div{
+    padding: 2em 0 0 0;
+}
+.tab_right div a{
+    font-size: 30px;
+    font-weight: bold;
+    padding : 0 1em 0 1em;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s;
+}
+.tab_right div a:hover{
+    color: lightgreen ;
 }
 main{
     display: block;
@@ -40,20 +85,22 @@ main{
     height: 100%;
     z-index: -1;
 }
-.home{
+/* .home{
     display: flex;
     font-size: 30px;
     font-weight: bold;
     position: absolute;
     top: 5%;
     left: 5%;
-    position: fixed;   
+    position: fixed;
+    text-decoration: none;
+    color: #000000;  
 }
 .home:hover{
     color:chartreuse;
     transition: 0.6s;
     cursor: pointer;
-}
+} */
 #further{
     width: 50%;
     position: absolute;
@@ -73,6 +120,9 @@ main{
 .further_text:hover {
     cursor: pointer;
 }
+.small_further_text:hover {
+    cursor: pointer;
+}
 /* 이미지 오른쪽 */
 .main_right {
     width: 50%;
@@ -83,7 +133,7 @@ main{
     z-index: -1;
 }
 /* 메뉴 오른쪽 */
-.tab{
+/* .tab{
     display: flex;
     margin-left: 10rem;
     position: absolute;
@@ -91,16 +141,18 @@ main{
     position: fixed;
     
 }
-.tab div{
+.tab div a{
     font-size: 30px;
     font-weight: bold;
     margin-right:40px;
+    text-decoration: none;
+    color: #000000;
 }
-.tab div:hover{
+.tab div a:hover{
     color:chartreuse;
     transition: 0.6s;
     cursor: pointer;
-}
+} */
 /* 사이드바 */
 .sideslide{
     display: flex;

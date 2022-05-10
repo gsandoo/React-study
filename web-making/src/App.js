@@ -1,11 +1,10 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Header from './components/Header';
-import  Menu from './components/Menu';
-import Slide from './components/Slide';
-import Items from './components/Items';
+import { Route } from 'react-router-dom';
 import './App.css';
 import './test.css';
+import Home from './components/Home';
+import About from './components/About';
 
 
 
@@ -21,10 +20,8 @@ function App() {
   return (
     <>
     <GlobalStyle/>
-    <Header/>
-    <Menu/>
-    <Slide/>
-    <Items/>
+    <Route path='/' component={Home} />
+    <Route path='/About' component={About}/>
     </>
   );
 }
