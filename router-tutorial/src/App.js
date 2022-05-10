@@ -13,7 +13,7 @@ function App(){
           <Link to='/'>홈</Link>
         </li>
         <li>
-          <Link to='/about'>소개</Link>
+          <Link to='/about'>소개(QUERY 사용)</Link>
         </li>
         <li>
           <Link to='/profiles'>프로필 목록</Link>
