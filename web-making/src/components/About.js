@@ -1,8 +1,20 @@
-import React from "react";
+import React , {useState} from "react";
 import Header from "./Header";
 import {Link} from 'react-router-dom'
 
+
 function About(){
+    // const [state,setState] =useState(false);
+    // const colorChange = ()=>{
+    //     if(state===false){
+    //         setState(true)
+    //     }else{
+    //         setState(false);
+    //     }
+    // };
+    
+    
+
     return(
         <>
             <div id="about_header">
@@ -12,8 +24,10 @@ function About(){
             </div>
             <div id="about_main">
                 <div id="left_pic">
-                    <img src="https://ecudemo184661.cafe24.com/add/images/bnnMain02.jpg" alt="face_img" />
+                    <img className="left_pic_gray" src="https://ecudemo184661.cafe24.com/add/images/bnnMain02.jpg" alt="face_img" />
+                    <img className="left_pic_change" src="https://ecudemo184661.cafe24.com/add/images/bnnMain01.jpg" alt="face_color_img" />
                 </div>
+                
                 <div id="paragraph">
                     <div className="description">
                         <h3>
@@ -30,15 +44,23 @@ function About(){
                         <div className="viewmore">
                             <Link to='/About'>view more</Link>
                         </div>
-                        <div>
-                            <div className="change_color">&larr;</div> {/*왼쪽 화살표 */}
-                            <div className="change_color">1/2</div>
-                            <div className="change_color">&#8594;</div> {/*오른쪽 화살표 */}
+                        <div className="flex">
+                            <div className="arrow">&larr;</div> {/*왼쪽 화살표 */}
+                            &nbsp;
+                            &nbsp;
+                            <div className="pages_num">
+                                <div className="pages">1/2</div>
+                                <div className="pages_visible">2/2</div>
+                            </div>
+                            &nbsp;
+                            &nbsp;
+                            <div className="arrow">&#8594;</div> {/*오른쪽 화살표 */}
                         </div>
                     </div>
                 </div>
                 <div id="right_pic">
-                    <img src="https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" alt="earrings_img" />
+                    <img className="right_pic_gray" src="https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" alt="earrings_img" />
+                    <img className="right_pic_change" src="https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg" alt="earrings_color_img" />
                 </div>
             </div>
         </>
