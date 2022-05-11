@@ -9,12 +9,12 @@ function Header(){
                 <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_mobile.png" alt="header_image_2"/>
             </div>
             <div id="navigation">
-                <div className="tab_left">
+                <div className="tab_left ">
                     <div>
                         <Link to='/'>HOME</Link>
                     </div>
                 </div>
-                <div className="tab_right flex">
+                <div className="tab_right ">
                     <div>
                         <Link to='/About'>ABOUT</Link>
                     </div>

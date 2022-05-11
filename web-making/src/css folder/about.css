@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about_header{
+    position: fixed;
+}
+
+
+/* 메인 사진 */
+
+
+#about_main{
+    width: 100%;
+    max-height: auto;
+    display: flex;
+    background-color: aquamarine;
+    position: absolute;
+    top: 20%;
+    padding: 0 5% 0 5%;
+}
+#left_pic{
+    width: 30%;
+}
+#left_pic img {
+    width: 100%;
+    height: 100%;
+}
+#paragraph{
+    width: 40%;
+    background-color: blueviolet;    
+    text-align: center;
+    padding-top: 5% ;
+}
+#paragraph h3{
+
+}
+#paragraph p {
+
+}
+#paragraph .viewmore{
+
+}
+.change_color{
+
+}
+#right_pic{
+    width: 30%;
+}
+#right_pic img{
+    width: 100%;
+    height: 100%;
+}
