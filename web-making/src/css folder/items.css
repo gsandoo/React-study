@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Noto+Sans+KR:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about_header{
+    position: fixed;
+    z-index: 1;
+}
+
+/* 메인  */
+
+#items_main{
+    position: absolute;
+    top: 20%;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.pictures{
+    cursor: pointer;
+}
+#information {
+    position: sticky;
+    top: 20%;
+    left: 60%;
+    width: 30%;
+    height: 500px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-bottom: 2vh;
+}
+#information::-webkit-scrollbar{
+    display: none;
+}
+/* 상품정보 탑 */
+.top{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    line-height: 2em;
+    text-align: center;
+}
+.name{
+ font-size: 15px;
+ font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+}
+.remove{
+  text-decoration: line-through;  
+  color: #AAAAAA;
+  margin-right: 1em;
+  font-family: 'Lato' , 'Noto Sans KR' , sans-serif ; 
+}
+.real_price{
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-weight: 300;
+}
+.definition{
+    padding-bottom: 2vh ;
+    font-size: 11px;
+    color: #AAAAAA;  
+    text-align: center;  
+}
+/* 상품정보 미들 */
+.details{
+    line-height: 3em;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 12px;
+    margin-bottom: 3vh;
+}
+.remove_detail{
+    text-decoration: line-through;
+    color: #AAAAAA;
+}
+.tab{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.blue{
+    font-weight: 900;
+    color: cornflowerblue;
+}
+.tab_result{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+/* 상품 정보 바텀 */
+.bottom{
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 12px;
+    text-align: center;
+    line-height: 3em;
+    margin-bottom: 3vh;
+}
+#colors{
+    width: 30em;
+    height: 2em;
+}
+#options{
+    text-align: center;
+}
+#size{
+    width: 30em;
+    height: 2em;
+}
+/*  상품 정보 빌로우 */
+
+.below{
+    
+}
+.total{
+    text-align: center;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    vertical-align: top;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 12px;
+}
+.buy{
+    background-color: #ffffff;
+    padding: 1vh 2vw 1vh 2vw;
+    width: 100%;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 16px;
+    margin-bottom: 2vh;
+}
+.buy:hover{
+    background-color: aliceblue;
+    font-style: italic;
+}
+.add{
+    background-color: #ffffff;
+    padding: 1vh 2vw 1vh 2vw;
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 16px;
+    border: 1px solid lightgray;
+}
+.add:hover{
+    background-color: aliceblue;
+    font-style: italic;
+}
+.wish{
+    background-color: #ffffff;
+    padding: 1vh 2vw 1vh 2vw;
+    width: 45%;
+    margin-left: 2.5%;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 16px;
+    border: 1px solid lightgray;
+}
+.wish:hover{
+    background-color: aliceblue;
+    font-style: italic;
+}
+.service{
+    display: flex;
+    padding: 2vh 0 2vh 0;
+    width: 100%;
+}
+.bold{
+    width: 25%;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 12px;
+}
+.gray{
+    width: 25%;
+    text-align: center;
+    color: #AAAAAA; 
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 12px;  
+}

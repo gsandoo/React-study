@@ -13,7 +13,7 @@
     height: auto;
     position: fixed;
     z-index: 1;
-    margin-bottom: 100px;
+    
 }
 #header {
     background-color: gray;
@@ -42,7 +42,8 @@
     align-items: center;
 }
 .home a{
-    font-size: 30px;
+    font-family: 'Cardo', serif;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #000000;
@@ -58,7 +59,8 @@
    align-items: center;  
 }
 .menu a{
-    font-size: 30px;
+    font-family: 'Cardo', serif;
+    font-size: 20px;
     font-weight: bold;
     padding: 0 1em 0 1em;
     text-decoration: none;
