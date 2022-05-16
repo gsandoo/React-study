@@ -65,7 +65,7 @@ function Items(){
                         </select>    
                     </div>
                     <div className="below">
-                        <div className="total"> TOTAL PRICE : 19,000 </div>
+                        <div className="total"> TOTAL PRICE : 120,000 </div>
                         <button className="buy">BUY NOW</button>
                         <div className="cart">
                             <button className="add"> ADD TO CART</button>

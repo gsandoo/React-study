@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Noto+Sans+KR:wght@300&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav_image{
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+#direction{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 70%;
+    width: 10%;
+}
+.home{
+    color: #000000;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+    font-size: 12px;
+}
+.arrow{
+    font-size: 12px;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+}
+.mypage{
+    font-size: 12px;
+    font-family: 'Lato' , 'Noto Sans KR' , sans-serif ;
+}
+#account_main{
+    position: absolute;
+    top: 50%;
+    margin: 0 10% 0 10%;
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+#login{
+    width: 6%;
+    border: none;
+    background-color: inherit;
+    padding: 1vh 0 1vh 0;
+    border-bottom: 1px solid #666666;
+    font-size: 26px;
+    font-family: 'Aerial' , sans-serif;
+    transition: 0.6s;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+#login:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.6s;
+    width: 15%;
+}
+#member_nomember{
+    width: 25%;
+    display: flex;
+    margin-left: 38%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+
+}
+#member_nomember > button{
+    cursor: pointer;
+}
+.member{
+    font-size: 20px;
+    font-family: 'Lato' , sans-serif;
+    text-align: center;
+    width: 50%;
+    padding: 1vh 0 1vh 0;
+    border-left: 1px solid #333333 ;
+    border-top: 1px solid #333333 ;
+    border-right: 1px solid #333333 ;   
+    border-bottom: none;
+    background-color: inherit;
+}
+.nomember{
+    font-size: 20px;
+    font-family: 'Lato' , sans-serif;
+    text-align: center;
+    width: 50%;
+    padding: 1vh 0 1vh 0;
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid #333333 ;   
+    border-bottom: 1px solid #333333;
+}
+#id_pw{
+    display: inline-block;
+    width: 30%;
+    height: 15vh;
+    margin-bottom: 5vh;
+}
+#id_pw > input{
+    display: block;
+    width: 100%;
+}
+.id{
+    height: 40%;
+    font-size: 20px;
+    font-family: 'Lato' , sans-serif;
+    padding-left: 2vw;
+    margin-bottom: 5%;
+}
+.pw{
+    height: 40%;
+    font-size: 20px;
+    font-family: 'Lato' , sans-serif;
+    padding-left: 2vw;
+}
+#login_bt{
+    display: block;
+    background-color: #ffffff;
+    border: none;
+    border: 2px solid lightgray;    
+    width: 25%;
+    margin-left: 38%;
+    height: 5vh;
+    font-size: 20px;
+    font-family: 'Lato' , sans-serif;
+    transition: 0.6s;
+    margin-bottom: 2vh;
+}
+#login_bt:hover{
+    color: #ffffff;
+    background-color: #000000;
+    transition: 0.6s;
+}
+#find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 5vh;
+}
+.bslash{
+    margin: 0 1vw 0 1vw;
+    font-size: 1em;
+    font-family: 'Lato' , sans-serif;
+    color: #888888;
+}
+.idfind{
+    font-size: 1em;
+    color: #888888;
+    font-family: 'Lato' , sans-serif;
+    cursor: pointer;
+}
+.pwfind{
+    font-size: 1em;
+    color: #888888;
+    font-family: 'Lato' , sans-serif;
+    cursor: pointer;
+}
+#ask{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ask p{
+    font-size: 16px;
+    font-family: 'Lato' , sans-serif;
+}
+#membership{
+    background-color: #ffffff;
+    border: none;
+    margin-left: 5%;
+    padding: 2vh 2vw 2vh 2vw;
+    font-size: 16px;
+    font-family: 'Lato' , sans-serif;
+    border: 2px solid lightgray;
+    transition: 0.6s;
+}
+#membership:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.6s;
+}
+

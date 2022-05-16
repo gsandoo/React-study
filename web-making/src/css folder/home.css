@@ -55,8 +55,10 @@
 .tab_right{
     display: flex;
     width: 50%;
-   justify-content: center;
-   align-items: center;  
+}
+.menu{
+    width: 25%;
+    text-align: center;
 }
 .menu a{
     font-family: 'Cardo', serif;
