@@ -168,9 +168,11 @@ main{
 }
 .sidebar_one{
     color: greenyellow;
+    transition: 0.6s;
 }
 .sidebar_two{
     opacity: 0.4;
+    transition: 0.6s;
 }
 .sideslide:hover .sidebar_one{
     color: gray;
