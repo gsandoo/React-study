@@ -8,10 +8,12 @@ import UserList from './UserList';
 // import Counter from './Counter';
 import CreateUser from './CreateUser';
 // import useInputs from './useInputs';
-import produce from 'immer';
+import produce from 'immer'; // immer 사용
 
 
-window.produce = produce;
+window.produce = produce; // chrome 에서 사용가능한 produce
+
+
 //useMemo 훅
 function countActiveUsers(users){
   console.log(" 활성 사용자 수를 세는 중...")
