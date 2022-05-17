@@ -3,7 +3,21 @@ import Header from "./Header";
 import {Link} from 'react-router-dom'
 
 
+function Change (){
+    
+}
+
 function About(){
+    const leftPic = [{
+        id: 1,
+        name : "leftPicGray",
+        src: require("https://ecudemo184661.cafe24.com/add/images/bnnMain02.jpg")
+    },
+    {
+        id: 2, 
+        name :"leftPicChange",
+        src: require("https://ecudemo184661.cafe24.com/add/images/bnnMain01.jpg")
+    }]
 
     
     

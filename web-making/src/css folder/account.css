@@ -165,6 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8vh;
 }
 #ask p{
     font-size: 16px;

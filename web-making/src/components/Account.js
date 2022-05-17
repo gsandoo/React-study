@@ -18,8 +18,8 @@ function Account(){
                    <button className="nomember">비회원 (주문조회)</button> 
                 </div>
                 <div id="id_pw">
-                    <input className="id"  placeholder="아이디"></input>
-                    <input className="pw"  placeholder="비밀번호"></input>
+                    <input className="id" type={'id'}  placeholder="아이디"></input>
+                    <input className="pw" type={'password'} placeholder="비밀번호"></input>
                 </div>
                 <button id="login_bt">로그인</button>
                 <div id="find">
