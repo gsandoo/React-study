@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Noto+Sans+KR:wght@300&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact_main{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    padding: 8vh 0 5vh 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.call{
+    width: 23%;
+    padding-left: 5%;
+    height: 20vh;
+}
+.cs{
+    margin-bottom: 2vh;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.num{
+    font-size: 24px;
+    font-family: 'NOTO SANS KR' ,sans-serif;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+.time{
+    font-size: 12px;
+    font-family: 'NOTO SANS KR' ,sans-serif;
+    color: #666666;
+    line-height: 3vh;
+}
+
+
+.bank{
+    width: 20%;
+    height: 20vh;
+}
+.account{
+    margin-bottom: 2vh;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.banknum{
+    font-size: 12px;
+    font-family: 'NOTO SANS KR' ,sans-serif;
+    color: #666666;
+    line-height: 3vh;
+}
+
+
+.exchange{
+    width: 25%;
+    height: 20vh;
+}
+.return{
+    margin-bottom: 2vh;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.resend{
+    font-size: 12px;
+    font-family: 'NOTO SANS KR' ,sans-serif;
+    color: #666666;
+    margin-bottom: 2vh;
+    line-height: 3vh;
+}
+.qna{
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid lightgray;
+    padding: 1vh 2vw 1vh 2vw;
+    cursor: pointer;
+}
+
+
+.company{
+    width: 32%;
+    height: 20vh;
+}
+.comp{
+    margin-bottom: 2vh;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.where{
+    font-size: 12px;
+    font-family: 'NOTO SANS KR' ,sans-serif;
+    color: #666666;
+    margin-bottom: 2vh;
+    line-height: 3vh;
+}

@@ -10,6 +10,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Items from './components/Items';
 import Account from './components/Account';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <Route path='/About' component={About}/>
     <Route path='/Items' component={Items}/>
     <Route path='/Account' component={Account}/>
+    <Route path='/Contact' component={Contact}/>
     </>
   );
 }
