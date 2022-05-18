@@ -1,27 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Header";
 import {Link} from 'react-router-dom'
 
-
-function Change (){
-    
-}
+/* <img className="right_pic_gray" src="https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" alt="earrings_img" />
+                    <img className="right_pic_change" src="https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg" alt="earrings_color_img" />
+ */
 
 function About(){
-    // const leftPic = [{
-    //     id: 1,
-    //     name : "leftPicGray",
-    //     src: require("https://ecudemo184661.cafe24.com/add/images/bnnMain02.jpg")
-    // },
-    // {
-    //     id: 2, 
-    //     name :"leftPicChange",
-    //     src: require("https://ecudemo184661.cafe24.com/add/images/bnnMain01.jpg")
-    // }]
-
-    
-    
-
+    const [darkmode , setLightMode] = useState(false);
+    const [number , setNumber] = useState (false);
     return(
         <>
             <div id="about_header">
@@ -31,10 +18,12 @@ function About(){
             </div>
             <div id="about_main">
                 <div id="left_pic">
-                    <img className="left_pic_gray" src="https://ecudemo184661.cafe24.com/add/images/bnnMain02.jpg" alt="face_img" />
-                    <img className="left_pic_change" src="https://ecudemo184661.cafe24.com/add/images/bnnMain01.jpg" alt="face_color_img" />
-                </div>
-                
+                    <img 
+                    className={darkmode ?"left_pic_change" :"left_pic_gray"}
+                    src={darkmode ?"https://ecudemo184661.cafe24.com/add/images/bnnMain02.jpg" : "https://ecudemo184661.cafe24.com/add/images/bnnMain01.jpg"}
+                    alt={darkmode ?"color" : "gray"}
+                    />
+                </div> 
                 <div id="paragraph">
                     <div className="description">
                         <h3>
@@ -52,22 +41,25 @@ function About(){
                             <Link to='/About'>view more</Link>
                         </div>
                         <div className="flex">
-                            <div className="arrow">&larr;</div> {/*왼쪽 화살표 */}
+                        <div className="arrow" onClick={()=>setLightMode(prevMode => ! prevMode)}>&#8592;</div> {/*왼쪽 화살표 */}
                             &nbsp;
                             &nbsp;
                             <div className="pages_num">
-                                <div className="pages">1/2</div>
-                                <div className="pages_visible">2/2</div>
+                                <div className={number ?"pages_visible" :"pages"}>{number ? "2/2" :"1/2"}</div>
                             </div>
                             &nbsp;
                             &nbsp;
-                            <div className="arrow">&#8594;</div> {/*오른쪽 화살표 */}
+                            <div className="arrow" onClick={()=>{setLightMode(prevMode => ! prevMode); setNumber(prevNumber => !prevNumber)}}>&#8594;</div> {/*오른쪽 화살표 */}
                         </div>
                     </div>
                 </div>
                 <div id="right_pic">
-                    <img className="right_pic_gray" src="https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" alt="earrings_img" />
-                    <img className="right_pic_change" src="https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg" alt="earrings_color_img" />
+                <img 
+                    className={darkmode ?"right_pic_change" :"right_pic_gray"}
+                    src={darkmode ?"https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" : "https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg"}
+                    alt={darkmode ?"color" : "gray"}
+                />
+                
                 </div>
             </div>
             <div id="move_items" >
