@@ -5,11 +5,12 @@ import App from './App';
 // import practiceApp from './practiceApp'
 // import Counter from './Counter.js'
 import reportWebVitals from './reportWebVitals';
+import HelloClass from './HelloClass';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />  {/*App.js 를 내보낸다*/}
+    <App/>  {/*App.js 를 내보낸다*/}
   </React.StrictMode>,
   document.getElementById('root') /*id가 root 인 것을 찾는다*/
 );
