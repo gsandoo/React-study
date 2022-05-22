@@ -94,9 +94,7 @@
     cursor: pointer;
     margin: 0 10% 0 10%;
 }
-.pages_num{
 
-}
 .pages{
     font-style: italic;
     
@@ -155,6 +153,8 @@
     cursor: pointer;
 }
 
+
+/* 아이템 리스트 */
 #about_items{
     position: absolute;
     top: 120%;
@@ -162,15 +162,16 @@
     max-width: 100%;
     height: auto;
 }
-.about_items{
+.about_items_slide{
     width: 100%;
-    height: auto;    
+    height: auto; 
+    overflow-x: hidden;   
 }
-.about_items div{
+.about_items_slide div{
     width: 25%;
     height: 25%;
 }
-.about_items div img{
+.about_items_slide div img{
     width: 100%;
     padding: 0 2vw 0 2vw ;
     cursor: pointer;

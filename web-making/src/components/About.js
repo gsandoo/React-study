@@ -9,6 +9,9 @@ import {Link} from 'react-router-dom'
 function About(){
     const [darkmode , setLightMode] = useState(false);
     const [number , setNumber] = useState (false);
+    
+
+    
     return(
         <>
             <div id="about_header">
@@ -54,12 +57,11 @@ function About(){
                     </div>
                 </div>
                 <div id="right_pic">
-                <img 
-                    className={darkmode ?"right_pic_change" :"right_pic_gray"}
-                    src={darkmode ?"https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" : "https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg"}
-                    alt={darkmode ?"color" : "gray"}
-                />
-                
+                    <img 
+                        className={darkmode ?"right_pic_change" :"right_pic_gray"}
+                        src={darkmode ?"https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" : "https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg"}
+                        alt={darkmode ?"color" : "gray"}
+                    />
                 </div>
             </div>
             <div id="move_items" >
@@ -71,11 +73,12 @@ function About(){
                 </div>
             </div>
             <div id="about_items">
-                <div className="about_items flex">
+                <div className="about_items_slide flex">
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/001.jpg" alt="items_image" /></div>
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/002.jpg" alt="items_image" /></div>
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/003.jpg" alt="items_image" /></div>
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/004.jpg" alt="items_image" /></div>
+
                 </div>
             </div>
             <div id="items_def">
