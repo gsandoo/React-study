@@ -126,6 +126,7 @@
     
 }
 
+
 /* items 사진들 */
 #move_items{
     display: flex;
@@ -164,8 +165,8 @@
 }
 .about_items_slide{
     width: 100%;
-    height: auto; 
-    overflow-x: hidden;   
+    height: auto;   
+   
 }
 .about_items_slide div{
     width: 25%;

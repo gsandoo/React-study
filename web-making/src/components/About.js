@@ -78,9 +78,8 @@ function About(){
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/002.jpg" alt="items_image" /></div>
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/003.jpg" alt="items_image" /></div>
                     <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/004.jpg" alt="items_image" /></div>
-
                 </div>
-            </div>
+            </div>              
             <div id="items_def">
                 <div className="sample">
                     <div className="product">SAMPLE PRODUCT</div>
