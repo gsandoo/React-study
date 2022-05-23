@@ -1,14 +1,13 @@
 import React, {useState} from "react";
 import Header from "./Header";
 import {Link} from 'react-router-dom'
+import Slider from "./Slider";
 
-/* <img className="right_pic_gray" src="https://ecudemo184661.cafe24.com/add/images/bnnMain04.jpg" alt="earrings_img" />
-                    <img className="right_pic_change" src="https://ecudemo184661.cafe24.com/add/images/bnnMain03.jpg" alt="earrings_color_img" />
- */
 
 function About(){
     const [darkmode , setLightMode] = useState(false);
     const [number , setNumber] = useState (false);
+    
     
 
     
@@ -64,22 +63,7 @@ function About(){
                     />
                 </div>
             </div>
-            <div id="move_items" >
-                <div className="best_product">BEST PRODUCT</div>
-                <div className="move_number">
-                    <div>#01</div>
-                    <div>#02</div>
-                    <div>#03</div>
-                </div>
-            </div>
-            <div id="about_items">
-                <div className="about_items_slide flex">
-                    <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/001.jpg" alt="items_image" /></div>
-                    <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/002.jpg" alt="items_image" /></div>
-                    <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/003.jpg" alt="items_image" /></div>
-                    <div><img src="https://ecudemo184661.cafe24.com/web/product/medium/004.jpg" alt="items_image" /></div>
-                </div>
-            </div>              
+            <Slider/>              
             <div id="items_def">
                 <div className="sample">
                     <div className="product">SAMPLE PRODUCT</div>
