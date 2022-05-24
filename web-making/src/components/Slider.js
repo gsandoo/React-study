@@ -3,7 +3,6 @@ import img1 from '../images/001.jpg';
 import img2 from '../images/002.jpg';
 import img3 from '../images/003.jpg';
 import img4 from '../images/004.jpg';
-
 import SliderImg from "./SliderImg";
 import styled from 'styled-components';
 
@@ -36,9 +35,9 @@ export default function Slider() {
   };
 
   useEffect(() => {
-    slideRef.current.style.transition = 'all 0.5s ease-in-out';
+    slideRef.current.style.transition = 'all 1s ease-in-out';
     slideRef.current.style.transform = `translateX(-${currentSlide}00%)`; // 백틱을 사용하여 슬라이드로 이동하는 에니메이션을 만듭니다.
-  }, [currentSlide]);
+  }, [currentSlide]); // 슬라이드 이동
 
   return (
     <>
@@ -75,7 +74,7 @@ const Container = styled.div`
   top: 115%;
   width: 100vw;
   margin: auto;
-  height: 1000px;
+  height: auto;
   overflow: hidden; // 선을 넘어간 이미지들은 숨겨줍니다.
 `;
 
