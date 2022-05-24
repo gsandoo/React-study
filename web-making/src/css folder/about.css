@@ -144,14 +144,16 @@
 }
 .move_number{
     display: flex;
+    margin-left: 15vw;
 
 }
-.move_number div {
+.move_number h3 {
     font-size: 18px;
     color: #999;
     font-family: 'Cardo' , sans-serif;
     margin-right: 15vw;
     cursor: pointer;
+    
 }
 
 

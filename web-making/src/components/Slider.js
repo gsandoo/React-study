@@ -44,8 +44,8 @@ export default function Slider() {
     <div id="move_items" >
         <div className="best_product">BEST PRODUCT</div>
         <div className="move_number">
-            <div onClick={PrevSlide}>Prev</div>
-            <div onClick={NextSlide}>Next</div>
+            <h3 onClick={PrevSlide}>Prev</h3>
+            <h3 onClick={NextSlide}>Next</h3>
         </div>
     </div>
     <Container>
