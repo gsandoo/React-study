@@ -14,6 +14,12 @@ export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideRef = useRef(null);
 
+
+  
+
+
+
+
   // Next 버튼 클릭 시
   const NextSlide = () => {
     if (currentSlide >= TOTAL_SLIDES) {
@@ -33,6 +39,9 @@ export default function Slider() {
       setCurrentSlide(currentSlide - 1);
     }
   };
+
+
+
 
   useEffect(() => {
     slideRef.current.style.transition = 'all 1s ease-in-out';

@@ -11,7 +11,7 @@ function About(){
     return(
         <>
             <div id="about_header">
-                <Header/>
+            <Header/>
             </div>
             <AboutMainSlide/>
             <Slider/>              

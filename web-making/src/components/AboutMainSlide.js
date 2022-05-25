@@ -1,15 +1,16 @@
 import React,{useState}from "react";
 import {Link} from 'react-router-dom'
-import styled from 'styled-components';
+import styled,{createGlobalStyle} from 'styled-components';
 
 function AboutMainSlide(){
     const [darkmode , setLightMode] = useState(false);
     const [number , setNumber] = useState (false);
 
-    
+
 
     return(
-        <GlobalStyle>
+        <>
+        <GlobalStyle/>
             <AboutMain>
                     <LeftPic>
                         <img
@@ -55,16 +56,17 @@ function AboutMainSlide(){
                         />
                     </div>
                 </AboutMain>
-        </GlobalStyle>
+            </>
     );
 };
 
-const GlobalStyle = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto&display=swap');
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+const GlobalStyle = createGlobalStyle`
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Roboto&display=swap');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 `
 
 
