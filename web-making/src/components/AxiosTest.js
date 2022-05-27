@@ -12,7 +12,9 @@ function AxiosTest(){
           const response = await axios.get(
             '/imagefile.json'
           );
+          console.log(response)
           setUsers(response.data);
+          
           console.log(users) // 데이터는 response.data 안에 들어있습니다.
         } catch (e){
           setError(e);
@@ -29,12 +31,15 @@ function AxiosTest(){
             준비중
             <button onClick={fetchUsers}>이 곳을 누르세여</button>
             {users&&users.map(user=>
-                <li key={user.id}>
+                <ul key={user.id}>
                   안녕 나는 {user.id} 번
                   url 은 {user.url} 이야
-                </li>
+                  <li><img src ={user.url} alt={user.id}/></li>
+                </ul>
+                
             )
             }
+            
         </div>
     );
 };

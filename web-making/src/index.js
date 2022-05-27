@@ -7,10 +7,11 @@ import { BrowserRouter } from 'react-router-dom';
 import Test from './components/Test';
 import Slider from './components/Slider';
 import AxiosTest from './components/AxiosTest';
+import AxiosApi from './components/AxiosApi';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-      <AxiosTest/>
+      <AxiosApi/>
     </BrowserRouter>
 );
 
