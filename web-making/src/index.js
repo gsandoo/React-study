@@ -5,10 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Test from './components/Test';
+import Slider from './components/Slider';
+import AxiosTest from './components/AxiosTest';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-      <Test/>
+      <AxiosTest/>
     </BrowserRouter>
 );
 

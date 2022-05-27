@@ -5,6 +5,7 @@ import img3 from '../images/003.jpg';
 import img4 from '../images/004.jpg';
 import SliderImg from "./SliderImg";
 import styled from 'styled-components';
+import axios from "axios";
 
 
 
@@ -13,6 +14,9 @@ const TOTAL_SLIDES = 2; // 전체 슬라이드 개수(총3개. 배열로 계산)
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideRef = useRef(null);
+
+ 
+     
 
 
   
