@@ -16,8 +16,8 @@ function Test() {
       const response = await axios.get(
         'https://jsonplaceholder.typicode.com/users'
       );
-      console.log(response.data);
       setUsers(response.data); // 데이터는 response.data 안에 들어있습니다.
+      console.log(users)  
     } catch (e){
       setError(e);
     };
@@ -33,6 +33,7 @@ function Test() {
 
 	// 아직 users가 받아와 지지 않았을 때는 아무것도 표시되지 않도록 해줍니다.
   if (!users) return null;
+
 
 	// 드디어 users가 성공적으로 받아와 진 상태입니다.
   return (
