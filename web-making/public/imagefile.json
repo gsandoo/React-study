@@ -1,11 +1,11 @@
 [
         {
             "id":1,
-            "url":"../images/001.jpg"
+            "url":"https://developers.naver.com/inc/devcenter/images/cont/img_search_tutorial_tab1_01.png"
         },
         {
             "id":2,
-            "url":"../images/002.jpg"
+            "url":"images//002.jpg"
         },
         {
             "id":3,

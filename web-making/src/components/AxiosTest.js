@@ -14,8 +14,7 @@ function AxiosTest(){
           );
           console.log(response)
           setUsers(response.data);
-          
-          console.log(users) // 데이터는 response.data 안에 들어있습니다.
+          console.log(setUsers) // 데이터는 response.data 안에 들어있습니다.
         } catch (e){
           setError(e);
         };
@@ -36,9 +35,11 @@ function AxiosTest(){
                   url 은 {user.url} 이야
                   <li><img src ={user.url} alt={user.id}/></li>
                 </ul>
-                
+              
             )
+
             }
+
             
         </div>
     );
