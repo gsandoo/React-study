@@ -5,11 +5,11 @@
         },
         {
             "id":2,
-            "url":"images//002.jpg"
+            "url":"images/002.jpg"
         },
         {
             "id":3,
-            "url":"../images/003.jpg"
+            "url":"../src/images/003.jpg"
         },
         {
             "id":4,

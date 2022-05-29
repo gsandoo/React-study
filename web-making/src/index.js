@@ -11,7 +11,7 @@ import AxiosApi from './components/AxiosApi';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-      <AxiosTest/>
+      <App/>
     </BrowserRouter>
 );
 

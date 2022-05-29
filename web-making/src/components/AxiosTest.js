@@ -1,8 +1,9 @@
 import React, { useState , useEffect} from "react";
 import axios from "axios";
+import img1 from '../images/001.jpg';
 
 function AxiosTest(){
-    const [users, setUsers] = useState(null)  
+    const [users, setUsers] = useState([])  
     const [error , setError] = useState(null)
     const fetchUsers = async () => {
         try {
@@ -14,7 +15,8 @@ function AxiosTest(){
           );
           console.log(response)
           setUsers(response.data);
-          console.log(setUsers) // 데이터는 response.data 안에 들어있습니다.
+           console.log(setUsers) // 데이터는 response.data 안에 들어있습니다.
+          console.log(users)  
         } catch (e){
           setError(e);
         };
